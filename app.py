@@ -1,6 +1,7 @@
 from cellSegmentation.logger import logging
 from cellSegmentation.exception import AppException
-import sys
+from cellSegmentation.pipeline.training_pipeline import TrainPipeline 
 
-logging.info("welcome to custom log")
-
+obj = TrainPipeline()
+obj.run_pipeline()
+print("training done-----")
